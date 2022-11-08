@@ -11,14 +11,7 @@ When you login to jenkins for the first time, following is the screen you would 
 
 ## Configuring Global Security
 * Select  Manage Jenkins -> Configure Global Security
-* Verify
-  * checkbox for "Enable Security" is checked
-  * From Security Realm,  "Jenkins own database" is selected
-  * Authorization is set to "Logged in users can do anything"
-
-Observe the configs  and verify as per the screenshot attached below
-
-![Configure Global Security](images/configurations/default_sec_configs.png)
+* Inspect the options, no need to change anything here
 
 
 
@@ -35,20 +28,18 @@ Observe the configs  and verify as per the screenshot attached below
    * Available
    * Installed
    * Advanced
+   * Download progress
  ![Installed Plugins](images/plugins/installed_plugins.jpg)
 
  Select "Installed" to view the list of the plugins which came pre installed with jenkins.
 
-## Installing Git Plugin
-  * From "Manage Plugins", select **Available** tab.
-  * On the top-right corner you should see a filter box, start typing the search term in that box. For this example, we would type **git**.
+## Checking Git Plugin
+  * From "Plugin Manager", select **Installed plugins** on the left hand side.
+  * You should see a search box, start typing the search term in that box. For this example, we would type **git**.
 
   ![Searching for Plugins](images/plugins/searching_for_plugins.jpg)
 
-  * Scroll down till you see "Git Plugin" in the list, select it and click on "Download and install after restart"
-  ![Searching for Plugins](images/plugins/git_plugin_install_new.png)
-
-  * If you don't see Git plugin in the available list then it might have got installed when we installed all the suggested plugins.
+  * If you don't see Git plugin in the list, it may not have been installed at initiation - check available plugins and logs.
 
 
   ----
