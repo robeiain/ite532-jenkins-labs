@@ -27,7 +27,8 @@ docker run -idt --name jenkins -v jenkins_home:/var/jenkins_home  -v /var/run/do
 
 If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
 
-After that you have to select install
+After that you have to select install.
+
 To start/stop jenkins with docker, use the following commands,
 
 ```
