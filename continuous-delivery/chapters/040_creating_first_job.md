@@ -28,7 +28,6 @@ A typical style jenkins jobs has the following sections.
 Lets now create a simple job using jenkins to run a hello world program.
 
   1. From Jenkins Main page, click on **New Item**.
-    ![New Job](images/chap4/new_item.jpg)  
   2. Provide a name to the project in Item Name i.e. "job1". Check against Free Style Project.
     ![ Naming Jenkins Job ](images/chap4/job_name.jpg)
 
@@ -36,9 +35,9 @@ Lets now create a simple job using jenkins to run a hello world program.
 
   3. Add job description. e.g., "Our first Jenkins Job".
 
-  4. Skip Source Code Management and Build Triggers, and scroll down to **Build** configurations.
+  4. Skip Source Code Management, Build Triggers and Build Environment, and scroll down to **Build** configurations.
 
-  5. From "Add Build Step" select **Execute Shell** and provide commands to execute. Since this  is a  mock job, you could provide following sample code,
+  5. From "Build Step" select **Execute Shell** and provide commands to execute. Since this is a  mock job, you could provide following sample code,
 
 ```
 #!/bin/bash
@@ -47,8 +46,6 @@ sleep 10
 ```
 
 Review and click on save to go to project page.
-
-![Project Page](images/chap4/project_page.jpg)
 
 ## Building Job for the First Time
 
