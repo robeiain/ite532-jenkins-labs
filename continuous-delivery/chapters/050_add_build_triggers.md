@@ -11,7 +11,7 @@ From project page, click on **Configure**.
 1. Trigger builds remotely
 2. Build after other projects are built
 3. Build periodically
-4. Poll SCM
+4. Poll SCM (Source Code Management)
 
 ## Execute Jobs Remotely
 
@@ -24,7 +24,7 @@ Jobs can be triggered remotely outside of jenkins. This is very useful when you 
 
 ![remote1](images/chap5/remote.jpg)
 
-* Define a token (More complex one than the example)
+* Define a token (**mytoken** or something else you choose)
 
 * Save the job.
 
@@ -35,13 +35,12 @@ Jobs can be triggered remotely outside of jenkins. This is very useful when you 
 * We will use admin (first user we created)  user's API token to trigger this job. You can find this at
 
 ```
-jenkins_homepage -> people -> admin -> configure
+jenkins_homepage -> people -> admin (ite532 user) -> configure
 ```
 
-![flow](images/chap5/flow.gif)
+Click on **Add New Token** then **Generate** Note down the user's API token. 
 
-
-Click on **Show API Token** Note down the user's API token. 
+![api token](images/chap5/apitoken.jpg)
 
 * Visit the trigger from browser or use curl
 
@@ -50,7 +49,7 @@ user:<API_TOKEN>@<Jenkins_URL>/job/job1/build?token=<JOB_TOKEN>
 ```
 
 ```
-Example: http://admin:552dab89b070c0fcc3fad281c51318ad@10.40.1.14:8080/job/job1/build?token=mytoken
+Example: http://ite532:11ced66b73687f88385dfc0ad8ed64fbf0@10.0.0.37:8080/job/job1/build?token=mytoken
 ```
 * This will trigger the build.
 
