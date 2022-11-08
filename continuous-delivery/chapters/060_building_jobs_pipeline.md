@@ -42,4 +42,4 @@ Jenkins calls these connections **Upstreams** and **Downstreams**. In the contex
 
 **this is the end of the required lab for ITE532 - there is more content for building applications using Jenkins for the keen, however it is not assessed**
 
-:point_right: [**Next** Chapter 7: Preparing to build Java  Projects](070_preparing_for_java_builds.md)
+:point_right: [**Next OPTIONAL** Chapter 7: Preparing to build Java  Projects](070_preparing_for_java_builds.md)
