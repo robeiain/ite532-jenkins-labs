@@ -40,6 +40,6 @@ Jenkins calls these connections **Upstreams** and **Downstreams**. In the contex
 ----
 :point_left:[**Prev** Chapter 5: Adding Build Triggers ](050_add_build_triggers.md)
 
-** this is the end of the required lab for ITE532 - there is more content for building applications using Jenkins for the keen, however it is not assessed **
+**this is the end of the required lab for ITE532 - there is more content for building applications using Jenkins for the keen, however it is not assessed**
 
 :point_right: [**Next** Chapter 7: Preparing to build Java  Projects](070_preparing_for_java_builds.md)
