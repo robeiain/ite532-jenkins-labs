@@ -27,14 +27,23 @@ docker run -idt --name jenkins -v jenkins_home:/var/jenkins_home  -v /var/run/do
 
 If you install it using the instructions above, find out the IP address and go to http://YOUR_IP_ADDRESS:8080 to access jenkins UI.
 
-After that you have to select install.
+After some time initialising the instance, you will be prompted for the password.
 
-To start/stop jenkins with docker, use the following commands,
+At the console, you can get the password by typing,
 
 ```
-docker start jenkins
-docker stop jenkins
+docker logs jenkins | tail -n 20
 ```
+
+Which will display the password to proceed with the installation:
+
+![Display password](images/chap2/jenkinspassword.png)
+
+After that you have to select to install with suggested plugins. 
+
+When complete you will be asked for an admin user and password,
+
+![admin request](images/chap2/adminuser.png)
 
 ## Common Post Installation Steps
 
