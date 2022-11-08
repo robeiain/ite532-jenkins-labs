@@ -45,44 +45,6 @@ When complete you will be asked for an admin user and password,
 
 ![admin request](images/chap2/adminuser.png)
 
-## Common Post Installation Steps
-
-After the installation, you will be asked for password. The password will be saved in the following file.
-
-```
-/var/jenkins_home/secrets/initialAdminPassword
-```
-
-Password can be also fetched from the logs. You could run the following command to view the password,
-
-```
-docker logs jenkins
-```
-
-or to follow the logs
-
-```
-docker logs -f jenkins
-
-[use ^c to come back to the terminal]
-```
-
-![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
-
-
-Click on  **Select Plugins to Install** when given an option.
-![Customize Jenkins](images/chap2/customize.png)
-
-
-This will let you choose the plugins to install on the next page. On the selection page,
-  * Click on **None** to deselect all plugins
-  ![Select None](images/chap2/select_none.png)
-
-
-
-Create Admin user
-
-![Admin](images/chap2/Create_Admin.png)
 
 Now we have successfully installed Jenkins and we can proceed with configurations
 
