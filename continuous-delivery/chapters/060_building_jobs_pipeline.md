@@ -37,50 +37,6 @@ Go to jobs3 and define a dependency on job2. To do so scroll to **Build Triggers
 
 Jenkins calls these connections **Upstreams** and **Downstreams**. In the context of job1, downstream is job2 and for job2, job1 is upstream. Same goes with job2 and job3.  This is depicted in the following image which shows the job2 configurations.
 
-![Viewing Upstreams and Downstreams](images/chap6/job2_updown.jpg)
-
-## Install Pipeline Plugin
-
-To get a better view of the complete pipeline and the workflow, install a plugin which allows creation of  a special view for connected jobs.
-
-To install this plugin,
-
-* From **Manage Jenkins** select **Manage Plugins**.
-
-* Click on **Available** tab and start typing "pipeline" in the filter box. No need to press enter.
-
-* Check the box by **Build Pipeline Plugin**, the second option, and click on the button at the bottom to "Download and install after restart".
-
-* If you don't see this plugin in the *Available* list then check the *Installed* list to see if it is installed already.
-
-![Install Build Pipeline Plugin](images/chap6/pipeline_plugin.jpg)
-
-## Create Pipeline View
-
-Now create a pipeline view.
-
-* From Jenkins dashboard click on the **+** symbol beside the current list view named **ALL** which displays all jobs.
-
-![Add View](images/chap6/add_view.jpg)
-
-* Provide a name to the view e.g. **pipe1**, check the radio button for **Build Pipeline View**. Click ok.
-
-![Pipe Line View](images/chap6/pipe1.jpg)
-
-* From view configurations, select initial job from the drop down menu and the number of displayed builds.  Click on OK to finish configurations and show the view.
-
-![Add View](images/chap6/pipe1_config.jpg)
-
-## Run pipelines
-
-* The pipeline view reads the first job, and picks up all the jobs which are directly or indirectly connected showing you one single view of the complete workflow and the order in which it is going to be executed.
-
-![Run Pipeline](images/chap6/run_pipe.jpg)
-
-* Pipeline view also shows the history of job runs up to the number of instances you selected earlier in the configuration.
-
-* Go trigger a **Run** from the pipeline view and see what happens. Make sure you have selected "ENABLE AUTO REFRESH" earlier from the top right corner of the screen.
-
 ----
 :point_left:[**Prev** Chapter 5: Adding Build Triggers ](050_add_build_triggers.md)
 
