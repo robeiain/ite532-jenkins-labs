@@ -203,7 +203,7 @@ docker logs -f jenkins
 ![Unlock Jenkins](images/chap2/Unlock_Jenkins.png)
 
 
-Select ** Install Suggested Plugins ** when given an option. This will install all common plugins such as git, gradle, ssh, pipeline which are quiet handy.
+Select ** Install Suggested Plugins ** when given an option. This will install all common plugins such as git, gradle, ssh, pipeline which are quite handy.
 
 Create Admin user
 
